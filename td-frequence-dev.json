@@ -1,7 +1,25 @@
 {
+  "requiresAttributes": [
+    {
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth",
+      "targetId": null,
+      "targetType": null
+    }
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:us-west-2:247951454205:task-definition/td-frequence-dev:1",
+  "networkMode": "bridge",
+  "status": "ACTIVE",
+  "revision": 1,
+  "taskRoleArn": null,
   "containerDefinitions": [
     {
+      "volumesFrom": [],
       "memory": 128,
+      "extraHosts": null,
+      "dnsServers": null,
+      "disableNetworking": null,
+      "dnsSearchDomains": null,
       "portMappings": [
         {
           "hostPort": 80,
@@ -9,10 +27,28 @@
           "protocol": "tcp"
         }
       ],
+      "hostname": null,
       "essential": true,
-      "name": "",
-      "image": "sachinfirst",
+      "entryPoint": null,
+      "mountPoints": [],
+      "name": "myfirstcontainer",
+      "ulimits": null,
+      "dockerSecurityOptions": null,
+      "environment": [],
+      "links": null,
+      "workingDirectory": null,
+      "readonlyRootFilesystem": null,
+      "image": "247951454205.dkr.ecr.us-west-2.amazonaws.com/sachinfirst",
+      "command": null,
+      "user": null,
+      "dockerLabels": null,
+      "logConfiguration": null,
+      "cpu": 0,
+      "privileged": null,
+      "memoryReservation": null
     }
-      ]
-  "family": "frequence-dynamic-app"
+  ],
+  "placementConstraints": [],
+  "volumes": [],
+  "family": "td-frequence-dev"
 }
