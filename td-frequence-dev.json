@@ -3,8 +3,8 @@
     {
       "name": "Sample-Container",
       "image": "247951454205.dkr.ecr.us-west-2.amazonaws.com/sachinfirst:BUILD_NUMBER",
-      "memory": "200",
-      "cpu": "10",
+      "memory": "128",
+      "cpu": "1",
       "essential": true
     }
   ],
